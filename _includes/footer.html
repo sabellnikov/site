@@ -1,0 +1,17 @@
+<footer class="footer {% if site.scrollappear_enabled %}scrollappear{% endif %}">
+  <p>
+    Оформление от <a href="http://nielsenramon.com/" rel="noreferrer noopener" target="_blank">Ниэльсена Рамона</a>
+    <br>
+    Немного информации <a href="{{ 'about' | relative_url }}">обо мне</a>
+    <br>
+    <ul class="footer-links">
+    {% if site.theme_toggle == true %}
+      <li>
+        <a onclick="toggle()" title="Переключить тему">
+          {% include svg-icon.html icon="theme" %}
+        </a>
+      </li>
+    {% endif %}
+    </ul>
+  </p>
+</footer>
