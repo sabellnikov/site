@@ -3,7 +3,7 @@
 blog_theme: light # Or use dark
 name: Alex Sab
 paginate: 7
-url: # add your site url (format: https://example.com)
+url: https://sab.fm # add your site url (format: https://example.com)
 
 
 # Optional settings
