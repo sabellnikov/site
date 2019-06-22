@@ -11,7 +11,7 @@ url: https://sab.fm # add your site url (format: https://example.com)
 theme_toggle: true # Change to true if you wish to show an icon in the footer of the site
 about_enabled: false # Change to true if you wish to show an icon in the navigation that redirects to the about page
 baseurl: # Set if blog doesn't sit at the root of the domain (format: /blog)
-discus_identifier: sabellnikov # Add your Disqus identifier
+discus_identifier: sab-fm # Add your Disqus identifier
 ga_analytics: UA-142363733-1 # Add your GA Tracking Id
 local_fonts: true # Change to true if you wish to use local fonts
 rss_enabled: true # Change to false if not
