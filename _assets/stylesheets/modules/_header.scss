@@ -86,3 +86,14 @@
     }
   }
 }
+
+.switch-theme {
+  float: center;
+  padding: 0;
+  list-style: none;
+      svg {
+        width: 15px;
+        height: 15px;
+        fill: $article-footer-color;
+      }
+}

@@ -4,13 +4,11 @@
     <br>
     Немного информации <a href="{{ 'about' | relative_url }}">обо мне</a>
     <br>
-    <ul class="footer-links">
+    <ul class="switch-theme">
     {% if site.theme_toggle == true %}
-      <li>
         <a onclick="toggle()" title="Переключить тему">
           {% include svg-icon.html icon="theme" %}
         </a>
-      </li>
     {% endif %}
     </ul>
   </p>

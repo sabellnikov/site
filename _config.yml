@@ -45,6 +45,21 @@ social:
   #Choose more icons there: https://icomoon.io/app/#/select
 
 
+# Podcast iTunes
+podcast_subtitle: Тест 1
+podcast_url: http://sab.fm
+podcast_album_art:
+podcast_title: Sab Fm
+podcast_owner: Alex Sab
+podcast_email: sabellnikov@gmail.com
+podcast_category: Society & Culture
+podcast_subcategory: Personal Journals
+podcast_explicit: "No"
+podcast_author: Alex Sab
+podcast_description: Тест ОПИСАНИЯ
+podcast_summary: "Тест 2"
+
+
 # Important settings (change at own risk)
 
 assets:
