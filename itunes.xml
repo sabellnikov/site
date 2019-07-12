@@ -1,49 +1,28 @@
----
-layout: null
----
 <?xml version="1.0" encoding="utf-8"?>
 <rss xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
   <channel>
-    <title>{{ site.podcast_title }}</title>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ site.url }}" rel="self" type="application/rss+xml" />
-    <description>{{ site.podcast_description }}</description>
-    <itunes:author>{{ site.podcast_title }}</itunes:author>
-    <copyright>© {{ post.date | date: "%Y" }} {{ site.podcast_title }}</copyright>
+    <title>Sab Fm</title>
+    <link>https://sab.fm</link>
+    <atom:link href="https://sab.fm" rel="self" type="application/rss+xml" />
+    <description>Тест ОПИСАНИЯ</description>
+    <itunes:author>Sab Fm</itunes:author>
+    <copyright>©  Sab Fm</copyright>
     <language>ru-RU</language>
-    <lastBuildDate>{{ site.time | date: "%a, %d %b %Y %T %z" }}</lastBuildDate>
-    <itunes:category text="{{ site.podcast_category }}">
-        <itunes:category text="{{ site.podcast_subcategory }}" />
+    <lastBuildDate>Sat, 13 Jul 2019 00:42:36 +0300</lastBuildDate>
+    <itunes:category text="Society & Culture">
+        <itunes:category text="Personal Journals" />
     </itunes:category>
-    <itunes:explicit>{{ site.podcast_explicit }}</itunes:explicit>
-    <itunes:image href="{{ site.url }}/assets/imgages/logopodcast.png"/>
+    <itunes:explicit>No</itunes:explicit>
+    <itunes:image href="https://sab.fm/assets/imgages/logopodcast.png"/>
 
-    <itunes:subtitle>{{ site.podcast_subtitle }}</itunes:subtitle>
-    <itunes:summary>{{ site.podcast_summary }}</itunes:summary>
+    <itunes:subtitle>Тест 1</itunes:subtitle>
+    <itunes:summary>Тест 2</itunes:summary>
     <itunes:owner>
-      <itunes:name>{{ site.podcast_title }}</itunes:name>
-      <itunes:email>{{ site.podcast_email }}</itunes:email>
+      <itunes:name>Sab Fm</itunes:name>
+      <itunes:email>sabellnikov@gmail.com</itunes:email>
     </itunes:owner>
 
-		{% for post in site.categories.podcast %}
-        <item>
-            <title><![CDATA[{{ post.title | cdata_escape }}]]></title>
-            <link>{{ post.url | absolute_url }}</link>
-            <pubDate>{{ post.date | date: "%Y-%m-%d" }}</pubDate>
-            <itunes:category text="{{ site.podcast_category }}">
-                <itunes:category text="{{ site.podcast_subcategory }}"/>
-             </itunes:category>
-            <description>
-                <![CDATA[{{ post.description | cdata_escape }}]]>
-            </description>
-
-            <itunes:subtitle>{{ post.title | strip_html | expand_urls: site.url | cdata_escape }}</itunes:subtitle>
-            <itunes:summary>{{ post.description | expand_urls: site.url | cdata_escape }}</itunes:summary>
-            <itunes:author>Write the Docs community</itunes:author>
-            <itunes:explicit>{{ site.podcast_explicit }}</itunes:explicit>
-            <itunes:duration>{{ ep.podcast_duration }}</itunes:duration>
-        </item>
-    {% endfor %}
+		
 
     </channel>
 </rss>

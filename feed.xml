@@ -1,20 +1,34 @@
----
----
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="https://www.w3.org/2005/Atom" xmlns:dc="https://purl.org/dc/elements/1.1/">
   <channel>
-    <title>{{ site.name | xml_escape }}</title>
-    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
-    <link>{{ site.url }}</link>
-    <atom:link href="{{ page.path | absolute_url }}" rel="self" type="application/rss+xml" />
-    {% for post in site.posts limit:10 %}
+    <title>Alex Sab</title>
+    <description></description>
+    <link>https://sab.fm</link>
+    <atom:link href="https://sab.fm/feed.xml" rel="self" type="application/rss+xml" />
+    
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.description | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | absolute_url }}</link>
-        <guid isPermaLink="true">{{ post.url | absolute_url }}</guid>
+        <title>Обход блокировок без VPN</title>
+        <description>Так ли нужен VPN для обхода блокировок сайтов? Возможно есть иной способ решения? Разбираемся.</description>
+        <pubDate>Fri, 12 Jul 2019 00:00:00 +0300</pubDate>
+        <link>https://sab.fm/posts/firefox-antizapret</link>
+        <guid isPermaLink="true">https://sab.fm/posts/firefox-antizapret</guid>
       </item>
-    {% endfor %}
+    
+      <item>
+        <title>Bad Blood</title>
+        <description>Авторский перевод книги бестселлера Bad Blood. Перевожу ради забавы, и не претендую на 100% верность, однако буду признателен за помощь и поддержку словом!</description>
+        <pubDate>Thu, 27 Jun 2019 00:00:00 +0300</pubDate>
+        <link>https://sab.fm/posts/bad-blood-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8</link>
+        <guid isPermaLink="true">https://sab.fm/posts/bad-blood-%D0%BF%D0%B5%D1%80%D0%B5%D0%B2%D0%BE%D0%B4-%D0%BA%D0%BD%D0%B8%D0%B3%D0%B8</guid>
+      </item>
+    
+      <item>
+        <title>Работа с сайтом и GitHub</title>
+        <description>Технический пост содержащий информацию об управлении Jekyll и размещении сайта на GitHub</description>
+        <pubDate>Sat, 15 Jun 2019 00:00:00 +0300</pubDate>
+        <link>https://sab.fm/posts/%D0%BF%D0%BE%D1%81%D1%82-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B5%D0%B1%D1%8F</link>
+        <guid isPermaLink="true">https://sab.fm/posts/%D0%BF%D0%BE%D1%81%D1%82-%D0%B4%D0%BB%D1%8F-%D1%81%D0%B5%D0%B1%D1%8F</guid>
+      </item>
+    
   </channel>
 </rss>
